@@ -4,16 +4,16 @@ import { SafeAreaView, StyleSheet, Text, View, Button, TouchableOpacity } from '
 
 
 
-export default function App() {
+export default class App extends React.Component {
 
-  
+  render() {
   return (
     <SafeAreaView style={styles.container}>
     <View style={styles.calculation}>
-      <Text style={styles.calculationText}>{calculationText}</Text>
+      <Text style={styles.calculationText}></Text>
     </View>
       <View style={styles.result}>
-      <Text style={styles.resultText}>{resultText}</Text>
+      <Text style={styles.resultText}></Text>
       </View>
       <View style={styles.buttons}>
         <View style={styles.numbers}>
@@ -81,7 +81,7 @@ export default function App() {
     </SafeAreaView>
   );
 }
-
+}
 const styles = StyleSheet.create({
   container: {
     flex: 1,
